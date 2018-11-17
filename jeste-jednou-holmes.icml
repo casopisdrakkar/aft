@@ -1,0 +1,1193 @@
+<?xml version="1.0"?>
+<?aid style="50" type="snippet" readerVersion="6.0" featureSet="513" product="8.0(370)" ?><?aid SnippetType="InCopyInterchange"?><Document DOMVersion="8.0" Self="pandoc_doc">
+    <RootCharacterStyleGroup Self="pandoc_character_styles">
+        <CharacterStyle Self="$ID/NormalCharacterStyle" Name="Default"/>
+        <CharacterStyle Self="CharacterStyle/Code" Name="Produkt">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+            <AppliedFont type="string">Courier New</AppliedFont>
+          </Properties>
+        </CharacterStyle>
+        <CharacterStyle Self="CharacterStyle/Code Link" Name="Produkt kurz&#xED;vou">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+            <AppliedFont type="string">Courier New</AppliedFont>
+          </Properties>
+        </CharacterStyle>
+        <CharacterStyle Self="CharacterStyle/Italic" Name="Kurz&#xED;va" FontStyle="Italic">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          </Properties>
+        </CharacterStyle>
+        <CharacterStyle Self="CharacterStyle/Italic Link" Name="Odkaz kurz&#xED;vou" FontStyle="Italic">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          </Properties>
+        </CharacterStyle>
+        <CharacterStyle Self="CharacterStyle/Link" Name="Odkaz">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          </Properties>
+        </CharacterStyle>
+        <CharacterStyle Self="CharacterStyle/SmallCaps" Name="Citace v textu C" Capitalization="SmallCaps">
+          <Properties>
+            <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          </Properties>
+        </CharacterStyle>
+    </RootCharacterStyleGroup>
+    <RootParagraphStyleGroup Self="pandoc_paragraph_styles">
+        <ParagraphStyle Self="$ID/NormalParagraphStyle" Name="$ID/NormalParagraphStyle" SpaceBefore="6" SpaceAfter="6"> <!-- paragraph spacing -->
+            <Properties>
+                <TabList type="list">
+                    <ListItem type="record">
+                        <Alignment type="enumeration">LeftAlign</Alignment>
+                        <AlignmentCharacter type="string">.</AlignmentCharacter>
+                        <Leader type="string"/>
+                        <Position type="unit">10</Position> <!-- first tab stop -->
+                    </ListItem>
+                </TabList>
+            </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/Blockquote &gt; Paragraph" Name="Citace C" LeftIndent="10">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/BulList" Name="Seznam s punt&#xED;ky" BulletsAndNumberingListType="BulletList" LeftIndent="0">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+            <TabList type="list">
+              <ListItem type="record">
+                <Alignment type="enumeration">LeftAlign</Alignment>
+                <AlignmentCharacter type="string">.</AlignmentCharacter>
+                <Leader type="string"/>
+                <Position type="unit">10</Position>
+              </ListItem>
+            </TabList>
+          </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/BulList &gt; first" Name="Seznam s punt&#xED;ky - prvn&#xED; odstavec" BulletsAndNumberingListType="BulletList" LeftIndent="0">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+            <TabList type="list">
+              <ListItem type="record">
+                <Alignment type="enumeration">LeftAlign</Alignment>
+                <AlignmentCharacter type="string">.</AlignmentCharacter>
+                <Leader type="string"/>
+                <Position type="unit">10</Position>
+              </ListItem>
+            </TabList>
+          </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/Header2" Name="Nadpis C" LeftIndent="0" PointSize="30">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/Header3" Name="Podnadpis C" LeftIndent="0" PointSize="24">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          </Properties>
+        </ParagraphStyle>
+        <ParagraphStyle Self="ParagraphStyle/Paragraph" Name="Text &#x10D;l&#xE1;nku" LeftIndent="0">
+          <Properties>
+            <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          </Properties>
+        </ParagraphStyle>
+    <ParagraphStyle Self="ParagraphStyle/PerexC" Name="Z&#xE1;hlav&#xED; C perex"/><ParagraphStyle Self="ParagraphStyle/ArticleFrontMatterC" Name="Z&#xE1;hlav&#xED; C autor/rubrika"/><ParagraphStyle Self="ParagraphStyle/TitleC" Name="Z&#xE1;hlav&#xED; C titul"/><ParagraphStyle Self="ParagraphStyle/FirstParagraph" Name="Prvn&#xED; odstavec textu"/><ParagraphStyle Self="ParagraphStyle/ShortStoryParagraph" Name="Pov&#xED;dka - text"/></RootParagraphStyleGroup>
+    <RootTableStyleGroup Self="pandoc_table_styles">
+        <TableStyle Self="TableStyle/Table" Name="Table"/>
+    </RootTableStyleGroup>
+    <RootCellStyleGroup Self="pandoc_cell_styles">
+        <CellStyle Self="CellStyle/Cell" AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]" Name="Cell"/>
+    </RootCellStyleGroup>
+    <Story Self="pandoc_story" TrackChanges="false" StoryTitle="" AppliedTOCStyle="n" AppliedNamedGrid="n">
+        <StoryPreference OpticalMarginAlignment="true" OpticalMarginSize="12"/>
+
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/ArticleFrontMatterC">
+                        <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+                <Content>Napsal	</Content>
+            </CharacterStyleRange>
+                        <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+  <Content>Argonantus</Content>
+</CharacterStyleRange>
+                    </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/TitleC">
+            <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+              <Content>Holmes a Pes</Content>
+            </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+                <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/PerexC">
+            <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+              <Content>Minule jsem předvedl nedokonalý Holmesův příběh, který v sobě ale skrýval hned několik lákavých variant, jak by ho bylo možno dopracovat a vytvořit něco podstatně lepšího. Že si to uvědomil sám autor lze dokázat tím, že přesně to nakonec udělal; dopracoval to, vzniklo něco jiného a lepšího. Pro gamemastery a spisovatele je ta první fáze rozvíjení prvotních nápadů daleko důležitější. Ale myslím, že bez zajímavosti není ani ta druhá – jak jednu konkrétní linii dobrousit do perfektního tvaru.</Content>
+            </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        
+        <!-- body needs to be non-indented, otherwise code blocks are indented too far -->
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Sherlock Holmes je mrtev</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Sherlock Holmes zemřel v roce 1890, a vyšlo to najevo v prosinci 1893, kdy vyšel ve Strandu </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Poslední případ (FINA)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Velký detektiv se zřítil v zápase s géniem zločinu Moriartym do Reichenbašských vodopádů.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Víme, proč tento zločin Conan Doyle spáchal. Holmes mu přerostl přes hlavu a zdržoval ho od vážného psaní historických románů. Kolotoč, kdy musel každý měsíc odevzdávat nové příběhy, byl zničující. Zřejmě ho také bombardovali čtenáři nejapnými dotazy. Nyní mohli pouze truchlit, zoufat nebo protestovat, což všechno prý také dělali.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Věřím, že tato mezera byla pro autora blahodárná. Možnost podívat se na dílo s odstupem je nutná k tomu, aby ho bylo možné dotáhnout do perfektního stavu. Přesně tohle raným Holmesům chybělo. Původně to bylo sériové novinové čtivo, přečte se a vyhodí. Víc od toho nikdo nečekal, ani sám autor. Jenže Holmes se nedal a prosadil se opravdu nad očekávání.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Už jsme uvedli, že detektivku Conan Doyle </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-1" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+              <Content>nevynalezl</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>; návaznost na jeho předchůdce je očividná. Poeovy nepočetné vzory zreplikoval prakticky všechny; jasný je třeba vztah </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Vražd v ulici Morgue</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Strakatého pásu (SPEC)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Ukradeného dopisu</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Námořní smlouvy (NAVA)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Zlatého skarabea</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Musgraveského rituálu (MUSG)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Kromě toho byli i jiní autoři, od kterých si Doyle vypůjčoval.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Doylova zásluha byla v tom, že se detektivní linky vytrvale držel. Bylo to podobně senzační jako u konkurence – </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-2" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic Link">
+              <Content>poklad v ceně půl milionu, černý kanibal a padouch s dřevěnou nohou</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> – ale navíc se tu rýsovala nová dimenze; záhada a smluvená hra se čtenářem; čtenář sám mohl hádat, jak to celé vlastně je. A to je teprve jádro detektivky. Nejen detektiv, šplhající po okapové rouře, ale detektiv, který na vrcholu toho okapu nalezne stopu, která napoví něco důležitého. Dobrodružství akčního hrdiny se tím poznenáhlu mění v dobrodružství rozumu.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Spěch dalšímu vývoji tohoto vynálezu vlastně bránil. Vznikala hromada logických lapsů. V </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Domě u měděných buků (COPP)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Holmes slavnostně vydedukuje, že majitel domu pan Rucastle asi není dobrý člověk, neb se jeho povaha přenáší na divnou povahu syna. Nicméně o pár stránek předtím pan Rucastle vyhrožoval hrdince, že jí předhodí psovi, takže si jeho ne úplně laskavé povahy mohl všimnout leckdo. Ve </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Studii v šarlatové (STUD)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> víme, že byl Watson ve válce raněn do ramene. Ve </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Znamení čtyř (SIGN)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> si proti tomu stěžuje, že ho pobolívá dříve zraněná noha. A co říci o českém králi jménem Wilhelm Gottsreich Sigismond von Ormstein, který se zjevil roku 1988 v Holmesově pracovně (SCAN)?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Nápady se také opakovaly. Jazyk i styl ustrnuly na místě. Autor to celé nebral dostatečně vážně. Nevěřil Holmesovi a nevěřil ani své vyprávěcí metodě se zatajováním informací. Netušil, že se podílí na něčem opravdu velikém.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A teď byl od toho všeho chválabohu pokoj.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Konkurence nespí</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Ve skutečnosti ale pokoj nebyl.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Pokud nechtěl psát detektivky Conan Doyle, nic nebránilo jiným, aby ho napodobili. Nikoli až po Holmesovi, jehož poslední dobrodružství vzniklo v roce 1927 (SHOS), ale doslova během Holmese zamířili na scénu borci těžké váhy jako G. K. Chesterton, E. C. Bentley, Maurice Leblanc či Edgar Wallace. A řada z nich byla fanatiky rozumu, ještě nad samotného Holmese. Dr. Thorndyke R. Austina Freemana nebo Augustus S. F. X. Dusen Jacquese Futrella. Oba byli na scéně již těsně po přelomu století.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A někteří to stihli ještě dřív. </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-3" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+              <Content>Zde</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> bylo připomenuto jméno </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-4" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+              <Content>Arthur Machen</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Jeho dvojici detektivů Dyson a Phillips najdeme poprvé v příběhu </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>Rudá ruka</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> (1895). Mnohem zajímavější jsou </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Tři podvodníci</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> (taktéž 1895). Jedná se o podstatně delší a složitější text, v něčem připomínající </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Studii v šarlatové</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> či </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Znamení čtyř</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, poskládaný z kratších vyprávění. Jenže to má navíc celkovou kompozici a hlavní pointu, což se vlastně Doylovi zatím u delší věci nepodařilo. A kromě toho to má i úžasnou atmosféru. Dobrodružství rozumu, které velkolepě odbočuje do nadpřirozena a do příběhu se strašidlem, důmyslného mixu hororu a scifi. Těžko překvapí, že to později uchvátilo H.P.Lovecrafta a vedlo přímo k jeho nejskvělejším výtvorům. A jak ještě uvidíme, na další Holmesovy osudy to mělo vliv přímo zásadní.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Pan Vyhlídka mi </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-5" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+              <Content>ve svém díle</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> prozradil, že již v téže době byla vynalezena Holmesovská fan fiction, v roce 1893, konkrétně v divadelní hře Charlese Brookfielda </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Under the Clock</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a skoro obratem ve hře další, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Sherlock Holmes</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> od Johna Webba, 1894.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A.C. Doyle byl sice stále na Holmese naštvaný, ale nechal se zlákat a sepsal svoji vlastní dramatizaci Holmesových případů. Chvíli s tím neúspěšně obcházel, a pak objevil herce a dramatika Williama Gilletta, který chtěl hru realizovat. A ten dostal od Conana Doyla opravdu hodně volnou ruku k úpravám: </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/SmallCaps">
+            <Content>„Ožeňte si ho, zabijte ho, jak se vám zlíbí.“</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Netušíme, jak původně Doylova hra vypadala, protože se nedochovala; vlastně by se jednalo o originální součást kánonu. Ve výsledku Gillette do hry použil </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Skandál v Čechách (SCAN)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Poslední případ (FINA)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, k nim přidal některé prvky ze </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Studie v šarlatové (STUD)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Znamení čtyř (SIGN)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Záhady Boscombského údolí (BOSC)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Řeckého tlumočníka (GREE)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Zjevně si tedy vybíral případy, které se obzvláště dotýkaly Holmese osobně a vystupují v nich další slavné vedlejší postavy – Irene Adlerová, James Moriarty nebo Mycroft Holmes. Událost je zajímavá tím, že podobné složeniny tvoří dnes pánové Moffat a Gatiss, když páchají seriál BBC jménem </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Sherlock</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, nebo Guy Ritchie se svými adaptacemi. Akorát to Gilette provedl již v roce 1899. Hra byla náramně úspěšná v Americe i v Británii, a obohatila svět o proslulou frázi </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/SmallCaps">
+            <Content>„Oh, this is elementary, my dear fellow.“</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Ano, je to překvapivé, ale tohle originální Doylův Holmes nikdy neřekl – je to až výsledek fanfiction pana Gilletta!</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Znamenitý pan Gillette nakonec osobně ztvárnil Holmese v této divadelní hře i v prvním němém filmu a jinde, celkem 1300 krát, a má lví podíl na naší vizuální představě Holmese. Může za „povinnou“ dýmku a za loveckou čapku, kterou originální Holmes Doylův vlastně moc nenosil. A lze také pochybovat, zda by se autor později vrátil k postavám Moriartyho nebo Mycrofta Holmese, nebýt tohoto Gilettova důrazného připomenutí.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Zkrátka, Holmes byl sice úředně mrtev, ale ve skutečnosti vesele působil v Baker Street dál; už tehdy trochu nabýval charakteru veřejného majetku a ctihodné britské instituce.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Konstrukce</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Takže máme přelom století, rok 1900. Pan Arthur Conan Doyle sedí ve své pracovně; můžeme si ho představit, jak pokuřuje dýmku, podoben svému duchovnímu dítku. Zlost na Holmese z něho už za těch sedm let musela vyprchat. Kromě toho víme, že chtěl stavět nový dům a chyběly mu peníze. Nemyslím ale, že by tahle jednoduchá přízemní motivace vysvětlovala vše; stačilo by totiž prostě obnovit ten zběsilý kolotoč a napráskat další sérii povídkových Holmesů. Čtenáři by si nic jiného nepřáli víc.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Věřím, že daleko důležitější byly ty umělečtější impulsy, které jsme tu vypočítali. Holmes byl Doyleho dílem, ale už při vzniku si bohatě vypůjčoval od konkurence, a teď tu různí autoři naznačili cesty, jak to celé ještě značně zdokonalit. Udělat něco, co leckdo načal, ale nedokázal dotáhnout; opravdový detektivní román o padesáti tisících slovech, s velikánskou záhadou, která čtenáře lapne někde na začátku a nepustí až do konce. Provést skutečnou polymeraci těch rozbitých článků řetězu do něčeho velkolepého. Nejen závěj detektivních jednohubek, kde řešení přijde pomalu dříve, než se čtenář stačí usadit v křesle a zformulovat si, proč je záhada vlastně záhadná. Nejen spoustu na sebe nalepených honiček a rvaček, ale případ všech případů, důmyslný systém stop, který může čtenář bez dechu rozplétat po celou dobu spolu s velkým detektivem a na konci být ohromen velkolepým zakončením.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Každý spisovatel ve svém díle nevyhnutelně prozrazuje kus vlastního způsobu myšlení. Edgar Alan Poe se uměl nejen nadchnout nad vizuální dramatickou scénou, kdy rozpadající se </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Dům Usherů</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> klesá do bažin, ale i provést brilantní nemilosrdnou dedukci všech motivů a postupů, jak k tomu došel. Tentýž člověk napsal </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Masku červené smrti</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> i </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Filosofii básnické skladby</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A Doyle byl jeho žák v kdečem. Nevím, jestli měla následující scéna přesně tu podobu, jak ji popisuji, ale něco podobného se prostě odehrát muselo alespoň ve zjednodušené podobě.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Představuji si, jak si Doyle položil na stůl vedle sebe všechny čtyři svoje knihy o Holmesovi; dva tak trochu nedopečené romány, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Studii v šarlatové</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Znamení čtyř</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, a dvě sbírky povídek, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Dobrodružství Sherlocka Holmese</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Vzpomínky na Sherlocka Holmese</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Podle mne tam ležel i Machenův rovněž nedotažený román </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Tři podvodníci</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a možná i nějaký výbor Poeových povídek. A skoro jistě tu byla </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Filosofie básnické skladby</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Do všech těchto knih se průběžně nahlíželo. A vše postupovalo </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-6" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic Link">
+              <Content>s přesností matematického problému</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Systém logických otázek a odpovědí.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>1) Co udrží pozornost čtenářovu nejsnadněji? Jaký druh zločinu?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Na stole ležely variace možností. Společenské skandály a případy záměny osob. Případy rafinovaných bankovních loupeží. Případy krádeží, nejlépe drahých šperků. Případy poklidných venkovských vražd s hledáním stop v okolí mrtvých. Případy ďábelsky rafinovaných smrtelných úkladů s hororovými okolnostmi. Případy pomsty za zločiny v zámoří s typicky dvojdílnou strukturou příběhu. A konečně, špionážní příběhy s rafinovanými agenty, převleky a dalšími triky.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Odpověď, jakou dávala reakce čtenářů, i knihy, ležící na stole, byla jednoznačná. </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>Vražda</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Nic není tak kruté, osobní, působivé, přímo biblické. Konverzace v salonu a cizí špioni omrzí dosti rychle. Krádež šperků může být snadno pouhou hrou, jakž se stalo v případu </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>Modré karbunkule</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> (BLUE).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>2) Jaký druh vraždy vzbudí největší pozornosti?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Hledání, načaté předchozí odpovědí, se dále jasně zužuje na vraždy </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>ďábelské, senzační, drastické</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Už Poeovy povídky dávají jasnou odpověď; </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Vraždy v ulici Morgue</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> s krvelačným orangutanem zná každý, o </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Záhadě Marie Rogetové</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> málokdo ví, že vůbec existuje. Z Holmesových dobrodružství do té doby jasně vyčnívá </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Strakatý pás (SPEC)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a jaká náhoda; ona je to jasná variace na </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Vraždy v ulici Morgue</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Jiný výrazně vyčnívající exemplář, o který musela pozornost pana Doyla přímo zakopnout, je </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Dům u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> (COPP). K vraždě tu sice nakonec nedojde, ale sakra že dojít mohlo; několik postav unikne hrozné smrti jen o vlas. A místo orangutana nebo hada je tu pes, to máte za jedny peníze.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>3) Přirozené, nebo nadpřirozené úklady?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Dříve by asi pana Doyla taková otázka nenapadla. Tisíce čtenářů by ji považovali za kacířství. Jenže tu leží ti </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Tři podvodníci</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a ukazuje se, jaká je v nadpřirozených okolnostech ohromná síla. A Poe? Dupin nikdy nic nadpřirozeného neřešil; právě v tom byl vtip jeho dobrodružství. Jenže… v jiných povídkách, třeba v </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Černém kocourovi</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, to tak úplně neplatilo.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Řešení, ke kterému autor došel na tomto místě, bylo přímo geniální a stalo se jádrem pozdějšího úspěchu. Udělat to přirozené, jako vždy, ale celou dobu se tvářit, že to přirozené být nemůže. Nechat na čtenáře celou dobu působit hrůzu z neznáma, a na konci ho vysvobodit zásahem zdravého rozumu. Ostatně, zase – ty </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Vraždy v ulici Morgue</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Strakatý pás</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, tam to přesně takto bylo. Stačí ten efekt jen roztáhnout na větší rozměr.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>4) Město, nebo venkov?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Zde měl odpověď nachystanou přímo pan Holmes, cestou k </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Domu u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>— Pro boha živého! — zvolal jsem. — Kdo by pomyslel na zločin, když vidí takové krásné staré chaloupky?“</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>— Vždycky mě naplňují jistou hrůzou. Věřím, Watsone, a vím to i ze zkušenosti, že v nejchudších a nejzpustlejších uličkách Londýna nedochází k tolika strašlivým zločinům jako na úsměvném půvabném venkově.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>— Vy mě děsíte, Holmesi!</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>— Vždyť to má i docela zřejmý důvod. Nátlak veřejného mínění zmůže ve městě víc, než stačí dokázat zákon. Jistě se nenajde tak zpustlá ulice, aby tu nářek týraného dítěte anebo rány surového opilce nevzbudily soucit a rozhořčení sousedů, a celá právní mašinérie je neustále tak nablízku, že stačí jenom si postěžovat, aby se rozjela, a pak už je jenom krok od zločinu k lavici obžalovaných. Ale jen se sám podívejte na ty opuštěné domečky, obklopené polnostmi a zabydlené většinou nevědomými chudáky, kteří nemají o zákonu ani ponětí. Pomyslete si, k jakým ďábelským krutostem tu může docházet, k jakým skrytým zlovolnostem, které se mohou táhnout rok dva, a nikdo se nic nedoví.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Takže i zde bylo jasno. Nakonec příběh začal v Londýně a přesunul se na venkov; tím byla dosažena dokonce jistá gradace dramatu.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>5) Venkov? Nešlo by to přesněji?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Zajisté šlo. Potřebujeme krajinu, která tvoří atmosféru už sama svojí existencí; nevlídnou, pochmurnou, tajemnou, kde může </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>docházet k ďábelským zlovolnostem a nikdo se nic nedozví</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Kde je často mlha, ve které lze bloudit, spousta skal, ze kterých lze spadnout. A bažina, ve které se lze utopit. A stopy po pravěkých lidech jako bonus. Dartmoor v Devonshiru těžko mohl ujít autorově pozornosti.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>6) Vrah jediný, nebo nějaké spiknutí?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Naznačená linka přes </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Strakatý pás</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Dům u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a pohrávání si s černou magií ukazovala opět jasným směrem. Spiknutí anonymních zlosynů málokoho baví. Stejně tak není k ničemu padouch, co je na konci málem k politování, jako to bylo v prvních dvou románech. Ne; potřebujeme strašlivého zlosyna, arcipadoucha, který nám to pěkně rozhýbá. Jen ďábel užije ďábelské prostředky.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>7) Co budou ty ďábelské prostředky?</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Už víme, že budou působit tajemně, až nadpřirozeně. A také by nemusely zanechávat stopy, čímž ještě zkomplikují případ. A už jsme to tu měli – orangutana, hada a psa. Vlastně i koně, v dalším hodně zdařilém případu </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Stříbrný Lysáček (SILV)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Hm, což ten pes? Vlastně nám to ten ne až tak moc hodný pan Rucastle v </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Domě u měděných buků (COPP)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> názorně předvedl – na oběť poštvat psa. Děsně velikého a děsně děsného. Úplně nadpřirozeného.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A tady někde došlo k procesu, který jsme už důkladně zkoumali </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-7" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+              <Content>v Drakkaru #36</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, a který bohužel nelze úplně racionálně vysvětlit. Pan Doyle dostal nápad. Totiž dokonce hned dva.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>První byl svojí podstatou vizuální; jak ten děsný ohnivý nadpřirozený pes ve finální scéně pronásleduje oběť. V mlze – to je ještě lepší. Domyslet potom racionální vysvětlení, že ten pekelný oheň lze způsobit fosforem, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>toť prosté, drahý Watsone</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Druhý nápad je ještě zásadnější. Scénu lze provést prostě dvakrát; jednou jako dávnou báji, kterak někoho kdysi zahubil pekelný pes, a podruhé jako realitu. Ke které se budeme postupně blížit.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/SmallCaps">
+            <Content>Dál už se to napsalo vlastně samo</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, pravil by mistr Bradbury.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>IV. Realizace - jádro</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Netuším, zda v této úvaze pan Doyle ještě pokračoval a zda napsal do detailů celého Psa </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>s přesností matematického problému</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, jak žádá </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Filosofie básnické skladby</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Je ale také možné, že Poeovskou úvahu někde v tomto bodě opustil a vrhl se do díla svojí bývalou zběsilou metodou, totiž že to průběžně psal a vydával. V každém případě to vycházelo znovu obvyklým způsobem na pokračování ve Strandu každý měsíc, v letech 1901 a 1902. Ježto ale bylo tentokrát vyjasněné, jak to dopadne, bylo ve výsledku všechno úplně jinak.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Moment. Sherlock Holmes je přece ještě stále mrtev!</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Autor to vyřešil snadno a rychle – prostě byl </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Pes Baskervillský (HOUN)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> jeden z těch případů, co jsou zmíněny mezi řádky, že je Watson doposud nepopsal. Jejich přesný počet je další oblíbená záhada badatelů. Zajímavější je ovšem otázka, proč Watson do roku 1893 vynechal tento zjevně nejsložitější případ. Také je i otázka, kdy se </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Pes Baskervillský</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> vlastně odehrává; všechna data jsou pečlivě vynechaná. Jisto je, že je to po roce 1884, kdy dostal Dr. Mortimer svoji hůl, ale před rokem 1890, kdy Holmes zemřel.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Ale zpět k románu. Zpočátku si čtenáři Strandu nemuseli všimnout, co se na ně chystá. Mohli se domnívat, že čtou veselou recyklaci </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Studie v šarlatové</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Zase je tu deduktivní scéna, pro změnu s holí. Další veselé honičky po Londýně v drožkách. Vyprávění o dávné minulosti Baskervillů. A pak náhle, na konci druhé kapitoly … </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/SmallCaps">
+            <Content>byly to stopy ohromného psa, pane Holmesi</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Vynález mezipointy na konci kapitoly je samozřejmě daleko starší. Nicméně si nevzpomínám na detektivní příběh, který by měl do té chvíle mezipointu takto úžasnou, a navíc v jasném vztahu k finální scéně. Jádro nápadu, ke kterému vedla předchozí úvaha, je nakonec rozvedeno takto:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>nejprve pes pronásledoval Huga Baskervilla, někdy dávno, neb je to legenda.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>potom se u zcela reálného, současného a nedávno mrtvého Charlese Baskervilla zjevil také nějaký ohromný pes. Potvrzovací pointa; to, co je nahozeno jako děsivá možnost, se nakonec ukáže být pravda. S tím vystačil později Lovecraft půl kariéry. </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>On fotografoval skutečnost</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>nakonec se tedy stane do třetice nezadržitelně přesně to, čeho se čtenář celou dobu obává – ve finále naživo pronásleduje ohromný pes Henryho Baskervilla.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>dokonce je tato scéna ve výsledku ještě zdvojena – napřed si myslíme, že pes pronásleduje Baskervilla, a pak teprve je to doopravdy. Z jedné a té samé scény máme tedy hned čtyři mocné efekty, které jsou osou celé konstrukce.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A celou dobu může čtenář průběžně a bezradně dumat, jak je taková šílená věc možná (howdunita) a kdo za tím stojí (whodunita).</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Beru zpět všechny námitky proti kompozici prvotních Doylových výtvorů; tohle je skvost, před kterým je třeba smeknout; horor, dokonale propojený s detektivkou, z jediného kusu oceli; něco tak dokonalého, že to vlastně v detektivce už nikdo nikdy nepřekonal. A Poe to celý život hledal, leč nenašel; nikdy nestvořil perfektní román. A mnozí další to od té doby prostě vzali a použili, ať v hororu nebo v detektivce. Třeba H. P. Lovecraft v </Content>
+          </CharacterStyleRange>
+          <HyperlinkTextSource Self="htss-8" Name="" Hidden="false">
+            <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code Link">
+              <Content>Případu Charlese Dextera Warda</Content>
+            </CharacterStyleRange>
+          </HyperlinkTextSource>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Nebo David Morrel, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Oranžová je bolest, modrá je šílenství</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. V detektivkách John Dickson Carr a </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Případ ustavičných sebevražd</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, kde je napřed zlověstná legenda o věži skotského hradu, a poslední majitel je nalezen, jak vyskočil z okna v hrůze před něčím… a další majitel nakonec vyskočí taky. Dokonce se tam uvažuje o zvířeti, které oběť dohnalo k tomu skoku.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Děsivé nebezpečí v minulosti, které potom ve finále zopakujete naživo, je mezi moderními thrillery stále fungující hit. Možná až klišé. Nepodařilo se mi ale najít, že by to někdo použil před </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>Psem baskervillským</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>V. Realizace – další odbočky a nápady</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>První Londýnská expoziční část románu končí po pěti kapitolách. Je to docela dlouhé. Ale je třeba připomenout, že jsme stále ještě na úsvitu 20. století a rychlejší spisovatelé prostě ještě neexistují. Navíc je v románu opravdu víc místa, než v shortstory, kde se pohyboval mistr často stejně rozvážně. Akcenty jsou celkem mírné – </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Italic">
+            <Content>honili padoucha drožkou a nechytli ho</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>. Hlavní situace ovšem již byla exponována v druhé kapitole, šílená záhada se psem stojí za vším a dodává dílu úplně jinou náladu, než bylo dříve zvykem. Třeba veselá epizoda se ztracenými botami nemusí být až tak veselá, když si chytrý čtenář domyslí souvislost.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Střední část vyprávění – plných šest kapitol - je bez Holmese. Možná to někoho překvapí. Důvody, které jsou nám řečeny, zní trochu podezřele. A máte pravdu, je to trochu jinak. Autor si uvědomil paradox, který od té doby detektivní romány všeobecně moc nevyřešily a on do něho v pozdějším </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Údolí strachu (VALL)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> zapadl rovněž.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>V povídce nám detektiv řekne, jak to je, ihned, když na to přijde. Vypadá to přirozeně a nic se nezkazí, neb už je mezitím konec povídky.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>V románu detektiv zjišťuje plno věcí průběžně. Nicméně kdyby nám to prozradil, bude brzy po záhadě, protože čtenář si může plno věcí domyslet. To vede k efektu, že detektiv často působí záhadně jako sfinga. Občas položí tajemnou otázku a nehodlá to svému Watsonovi vysvětlit. Takový Poirot je na to přímo odborník. Vlastně je to často i nebezpečné pro klienta. Holmes například ihned pochopil epizodu s botami – že totiž vrah plánuje poštvat na Baskervilla opravdového psa, proto ho učí pach oběti. Bylo by asi vhodné na to pana Baskervilla upozornit. Čímž by ale bylo po záhadě. Řešením bylo Holmese z děje dočasně odsunout, aby to nestačil vysvětlit. A čtenář, osiřelý s doktorem Watsonem, může nadále tonout ve změti tajemství.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Druhý důsledek je, že se bez Holmese na čas přesuneme do světa těch Machenových </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Tří podvodníků.</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Může na nás působit zlověstná atmosféra blat, kde v dálce umírá kůň, kterému není pomoci, a v mlze vyje tajemný pes – nebo je to jen zvuk bahna? – zkrátka, rozvíjí se kromě detektivky i ten horor, čtenáře pěkně naklepáváme jak řízek. Spousta tajemných náznaků vyvolává dojem, že se něco děje, i když se vlastně fyzicky nic neděje. Tohle je situace iniciačních Meyrinkových románů. A kdyby tu byl Holmes, všechno by nám bleskově vysvětlil a tím to ovšem taky zkazil.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Za zmínku stojí docela rozsáhlá odbočka s vězněm na blatech. Mám podezření, že i zde byl inspirací </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Dům u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, neb už tam se bloudí zlověstnými chodbami domu jak v gotickém románu. Nejspíše z téhož zdroje pocházejí dva podezřelí sloužící. A vězeň je potom využit v jedné ze zásadních scén v dalším ději, takže to vlastně úplná odbočka není.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Druhá zajímavá linie je paní Stapletonová a lovestory s Baskervillem. Navzdory svému lásce ne moc nakloněnému publiku autor tušil, že ve větším a vážnějším příběhu to bez žen tak úplně nepůjde. Stalo se mu to ve </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Znamení čtyř (SIGN)</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> a stalo se mu to i zde. Je možné, že i zde jde o přesmyčku </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Domu u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>; máme tu dámu s přehozenou totožností. Myslím, že se potenciál této postavy zdaleka nezdařilo využít. Zvláštní dilema, že jde o klasickou damsell in distress, která je ve finále zachraňována, a zároveň o někoho, kdo mohl celý zločin dávno zmařit, vede k nedůslednostem. Postmoderní věk nadšený akčními hrdinkami by nejspíš dokázal vytvořit pozoruhodnou feministickou variaci na tento nedořešený problém.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Jiná vpravdě Argonantovská otázka je, kde je celou dobu paní Watsonová. Docela chápu, že na ni lze směle zapomenout ve dvacetistránkové shortstory; Holmes a Watson zajedou vlakem do </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Domu u měděných buků</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>, nejpozději druhý den jsou zpátky a hotovo. Mnoho dní trvající pobíhání po blatech nabízelo naproti tomu hromadu možností, jak tuhle zapomenutou postavu na scénu dostat, po starodávnu ji nechat upadnout do nebezpečí a zachraňovat ji, nebo po současnu ji nechat, ať se zachrání sama, a případně při tom vyřeší půl případu. Rozhodně scéna, kde se pes baskervillský řítí na Mary Morstanovou - provdanou Watsonovou - má onačejší grády, než nějaký ohrožený aristokrat Baskerville.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>VI. Realizace – finále</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/FirstParagraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Po objevení Holmese – překvapivém, tvořící další pěknou mezipointu – nám zbývají přesně čtyři kapitoly pro finále. Odkládaný děj tu přímo exploduje, přesně jak se sluší v hororu i v detektivce.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Možná nejpozoruhodnější je hned první kapitola z této série, </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Smrt na blatech.</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> Pes dožene k smrti další oběť, ale ukáže se, že je to jen ten vězeň. Scéna je perfektní už tím, že psa opět vlastně nevidíme, takže se jeho zjevení znovu odkládá; a také je skvělá dramaticky, kdy najednou vidíme Holmese nečekaně v úplném zoufalství a ve stavu totální porážky. Na tohle se v nové době dokonale zapomnělo; Holmes nebyl žádný superhrdina, ale docela zranitelná bytost.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Jiná věc je, že je nám už zde prozrazeno, kdo je vrah. Což je pro pozdější věky až nepochopitelné. Připomeňme si, že jde vlastně o první detektivní román v dnešním slova smyslu, který pravidla teprve vynalézal. Ještě dlouho po něm existovalo to dělení detektivek na whodunity a howdunity; otázka JAK mohla být klidně důležitější, než KDO. Vzorový </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Strakatý pás</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> je zrovna čistá howdunita; kdo je vrah víme od začátku. </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Pes Baskervillský</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> je zakladatelský v tom, že neváhá využít oba tyto problémy. Autor měl za to, že ta záležitost se psem je důležitější, než jeho majitel, a podle mne to odhadl přesně.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Po odhalení vraha je finále stále ještě docela dlouhé. Proběhne přípravná kapitola, kde je nalezen motiv vrahova jednání, a dovysvětlena záležitost s Laurou Lyonsovou. A je povolán Lestrade k finální pasti na lapení pachatele. V zásadě nic nebránilo tomu, abychom jméno padouchovo zjistili s výhodou až někde u scény s obrazem, kde Holmes objeví, že podezřelý je vlastně další Baskerville. A scénu šlo odsunout docela daleko dozadu. Souvisí to s nedotaženou postavou paní Stapletonové, která mohla být v této fázi ideální hlavní podezřelá.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>A pak je teprve, po patřičném nervózním čekání, odpáleno hlavní finále, které v bizarním tehdejším překladu vypadá takto:</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Byl jsem po boku Holmesově, i podíval jsem se na okamžik na jeho tvář. Byla bledá, avšak měla výraz radostného očekávání. Oči Holmesovy přímo svítily ve světle měsíčním. Náhle však upřely se vpřed ztrnulým, utkvělým výrazem a též rty Holmesovy otevřely se úžasem. V tomtéž okamžiku Lestrade vzkřikl hrůzou a mrštil sebou tváří na zem. Vyskočil jsem na nohy, moje ztrnulá ruka svírala zbraň, leč mysl moje ohromena byla strašlivou postavou, jež vyrazila na nás ze stínův mlhy.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Byl to pes, obrovský pes, černý jak uhel, avšak oči žádného smrtelníka neviděly nikdy psa takového. Oheň šlehal z otevřené tlamy jeho, oči jeho plály jako řeřavé, čenich jeho i lalok svítily, jakoby plamének blikal temnotou. Nikdy ani mozek rozrušený v horečných snech nemohl si představiti nic divočejšího, děsivějšího a ďábelštějšího nad toto temné tělo a nad tuto divou tvář, jež vyrazila proti nám z hradeb mlhy. Dlouhými skoky obrovský, černý tvor tento pádil po stezce, sleduje přesně stopy přítele našeho*.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Ulovením psa se uzavírá jak horor, tak otázka JAK, kterou měl autor za hlavní. Takže vlastně vše podstatné. Pozdější autor by tohle finále také ještě odsunul kousíček za záchranu paní Stapletonové, a možná to rovnou propojil s pronásledováním vraha po blatech. To skončí rovněž dnes už klasickým způsobem – bídák zahyne strašlivou smrtí. A dovysvětlovací poslední Poirotovská kapitola je vlastně úplně zbytečná, protože všechno důležité už víme. Detaily jsme mohli klidně nastrkat před ty finální mocné scény.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Ale to je úplně jedno; jsou to všechno drobnosti, které víme až po stu letech dalšího psaní, kdy byl </Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+            <Content>Pes</Content>
+          </CharacterStyleRange>
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content> tisíckrát rozebrán na šroubky a zase složen, tisíckrát napodoben a hlavně mnohotisíckrát čten nebo viděn ve filmu.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Nakonec bych dodal, že se Psovy moderní fanfiction variace obzvláště nedaří, protože se ducha této úžasné věci nepodařilo vystihnout. Odstranit styl 19. století a gotického románu, jakož i to velmi přesné balancování na hraně přirozeného a nadpřirozeného, nebo dokonce se to pokoušet přesunout mimo krajinu melancholického močálu se ukázalo být vždy zásadní omyl.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+        <Br/>
+        <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+          <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+            <Content>Přesto doufám, že toto nahlédnutí do vnitřku konstrukce pomůže těm, kdo si odtud mohou vypůjčit něco užitečného pro svoje hry nebo psaní. To nejzajímavější jsou právě ty nedořešené a nakousnuté dějové linie; a také ta fantastická atmosféra.</Content>
+          </CharacterStyleRange>
+        </ParagraphStyleRange>
+
+    </Story>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/31/" Name="link" DestinationURL="http://drakkar.sk/31/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-8" Name="http://drakkar.sk/31/" Source="htss-8" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/31/</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/36/" Name="link" DestinationURL="http://drakkar.sk/36/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-7" Name="http://drakkar.sk/36/" Source="htss-7" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/36/</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/36/" Name="link" DestinationURL="http://drakkar.sk/36/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-6" Name="http://drakkar.sk/36/" Source="htss-6" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/36/</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//www.fext.cz/cokoliv/holmesiana.htm" Name="link" DestinationURL="http://www.fext.cz/cokoliv/holmesiana.htm" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-5" Name="http://www.fext.cz/cokoliv/holmesiana.htm" Source="htss-5" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//www.fext.cz/cokoliv/holmesiana.htm</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//neviditelnypes.lidovky.cz/literatura-arthur-machen-nejen-z-jitra-kouzelniku-fwi-/p_kultura.asp?c=A080901_182209_p_kultura_wag" Name="link" DestinationURL="http://neviditelnypes.lidovky.cz/literatura-arthur-machen-nejen-z-jitra-kouzelniku-fwi-/p_kultura.asp?c=A080901_182209_p_kultura_wag" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-4" Name="http://neviditelnypes.lidovky.cz/literatura-arthur-machen-nejen-z-jitra-kouzelniku-fwi-/p_kultura.asp?c=A080901_182209_p_kultura_wag" Source="htss-4" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//neviditelnypes.lidovky.cz/literatura-arthur-machen-nejen-z-jitra-kouzelniku-fwi-/p_kultura.asp?c=A080901_182209_p_kultura_wag</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/43/" Name="link" DestinationURL="http://drakkar.sk/43/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-3" Name="http://drakkar.sk/43/" Source="htss-3" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/43/</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/61/" Name="link" DestinationURL="http://drakkar.sk/61/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-2" Name="http://drakkar.sk/61/" Source="htss-2" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/61/</Destination>
+      </Properties>
+    </Hyperlink>
+    <HyperlinkURLDestination Self="HyperlinkURLDestination/http%3a//drakkar.sk/41/" Name="link" DestinationURL="http://drakkar.sk/41/" DestinationUniqueKey="1"/>
+    <Hyperlink Self="uf-1" Name="http://drakkar.sk/41/" Source="htss-1" Visible="true" DestinationUniqueKey="1">
+      <Properties>
+        <BorderColor type="enumeration">Black</BorderColor>
+        <Destination type="object">HyperlinkURLDestination/http%3a//drakkar.sk/41/</Destination>
+      </Properties>
+    </Hyperlink>
+</Document>

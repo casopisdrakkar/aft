@@ -33,3 +33,10 @@ Pipeline má nasledovné kroky
 
 ### `drakkar.xslt`
 XSLT šablóna opravujúca nedostatky a bugy ICML, ktorý vylezie z `pandoc`u.
+
+Použitie s `make`
+===
+
+    make VPATH=sample -d -r jeste-jednou-holmes.icml holmes-pes.icml
+    
+    
