@@ -1,19 +1,29 @@
 #!/usr/bin/env bash
 
-MARKDOWN_INPUT_FULLPATH=${1:?"Missing path to Markdown article source"}
-MARKDOWN_INPUT=$(basename ${MARKDOWN_INPUT_FULLPATH})
-ICML_INTERMEDIATE=${MARKDOWN_INPUT%.markdown}-intermediate.icml
-ICML=${MARKDOWN_INPUT%.markdown}.icml
 FLAVOUR=C
 ARTICLE_TYPE=article
 
-mkdir -p target 2> /dev/null
+while getopts :c:t: OPT
+do
+	case "$OPT" in
+		c) FLAVOUR="$OPTARG";;
+		t) ARTICLE_TYPE="$OPTARG";;
+		?) printf "Usage: %s: [-c COLOUR] [-t ARTICLETYPE] [FILE...]" $0; exit 2;;
+	esac		
+done
+shift $(($OPTIND - 1))
 
-echo "Converting Markdown to intermediate InDesign ICML"
-echo "Flavour: ${FLAVOUR}"
+[ "$@" ] || { echo "No files to process"; exit 2; }
 
-pandoc --verbose -i ${MARKDOWN_INPUT_FULLPATH} --o target/${ICML_INTERMEDIATE} --to icml+fenced_divs+raw_html+raw_attribute  --standalone --template template.icml --variable=articleFlavour="${FLAVOUR}"
+SRCDIR=sample
+ORIGINALDIR=$(pwd)
+cd "$SRCDIR"
 
-echo "Patching intermediate ICML"
-
-xsltproc --param articleFlavour "'${FLAVOUR}'" --param articleType "'${ARTICLE_TYPE}'" -o target/${ICML} drakkar.xslt target/${ICML_INTERMEDIATE}
+make --file "$ORIGINALDIR/makefile" \
+	-r VPATH=sample \
+	DESTDIR="$ORIGINALDIR/target" \
+	FLAVOUR="$FLAVOUR" \
+	ARTICLE_TYPE="$ARTICLE_TYPE" \
+	TEMPLATEDIR="$ORIGINALDIR" \
+	"$@"
+cd "$ORIGINALDIR"
