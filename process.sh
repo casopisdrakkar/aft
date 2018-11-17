@@ -20,7 +20,7 @@ ORIGINALDIR=$(pwd)
 cd "$SRCDIR"
 
 make --file "$ORIGINALDIR/makefile" \
-	-r VPATH=sample \
+	-r\
 	DESTDIR="$ORIGINALDIR/target" \
 	FLAVOUR="$FLAVOUR" \
 	ARTICLE_TYPE="$ARTICLE_TYPE" \
